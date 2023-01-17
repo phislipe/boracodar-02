@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  background: #d9cdf7;
+  font-family: "Lato", sans-serif;
+  color: #271a45;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  height: 100vh;
+}
+
+.preview {
+  display: flex;
+  position: relative;
+  width: 44.9rem;
+}
+
+.preview-image {
+  width: 100%;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.change {
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.description {
+}
+
+.code {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 1.2rem;
+}
+
+.product {
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin: 1.2rem 0 1.2rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 2rem;
+}
+
+.add {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 0.1rem solid #271a45;
+  border-radius: 2rem;
+  padding: 0.8rem 1.6rem;
+  margin: 2rem 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .preview,
+  .description {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .preview,
+  .description,
+  .add {
+    width: 90vw;
+  }
+
+  .product {
+    font-size: 3rem;
+  }
+
+  .change {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
