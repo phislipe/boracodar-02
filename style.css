@@ -60,7 +60,7 @@ main {
   padding: 1rem;
 }
 
-.change:hover:focus > img {
+.change:hover img {
   scale: 1.1;
 }
 
@@ -73,10 +73,6 @@ main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-.button:focus {
-  outline: none;
 }
 
 .description {
@@ -114,7 +110,7 @@ main {
 }
 
 .add:hover,
-.add:focus {
+.add:active {
   background: #271a45;
   color: #d9cdf7;
 }
